@@ -9,3 +9,5 @@ We define the relationship between customers and merchants via the Transactions 
 
 ### 2. User settings management functions (Python)
 To check that a feature is enabled, we use bitwise operations.
+
+We define a `is_feature_enabled` function which checks the bit at the `setting_index` argument and either returns True for '1', or False.
