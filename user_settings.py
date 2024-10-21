@@ -18,3 +18,11 @@ def write_settings(settings_list: list) -> int:
 
 def read_settings(settings_value: int) -> list:
     return [(settings_value & (1 << i)) != 0 for i in range(8)]
+
+# Usage example of writing settings
+encoded_value = write_settings([True, False, True, False, False, False, False, True])
+print(encoded_value)
+
+# Usage example of reading settings
+decoded_settings = read_settings(encoded_value)
+print(decoded_settings)
