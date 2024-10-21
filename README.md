@@ -14,4 +14,4 @@ We define a `is_feature_enabled` function which checks the bit at the `setting_i
 
 #### To store user settings without squandering space, we use bitwise operations.
 
-We write and read user settings by using ne integer to store all settings, thereby conserving space.
+We write and read user settings by using one integer to store all settings, thereby conserving space.
