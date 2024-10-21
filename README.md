@@ -12,4 +12,6 @@ We define the relationship between customers and merchants via the Transactions 
 
 We define a `is_feature_enabled` function which checks the bit at the `setting_index` argument and either returns True for '1', or False.
 
+#### To store user settings without squandering space, we use bitwise operations.
 
+We write and read user settings by using ne integer to store all settings, thereby conserving space.
